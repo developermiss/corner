@@ -1,0 +1,82 @@
+.hover-box{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    margin-top: 80px;
+    z-index: 1;
+}
+
+
+.corner-top-left {
+    background: #fdb900;
+    height: 10px;
+    width: 4px;
+    position: relative;
+}
+
+.corner-top-left:before {
+    background: #fdb900;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10px;
+}
+
+.corner-bottom-left {
+    background: #fdb900;
+    height: 10px;
+    width: 4px;
+    position: relative;
+    top: 20px;
+}
+
+.corner-bottom-left:after {
+    background: #fdb900;
+    content: "";
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+}
+
+.corner-top-right {
+    background: #fdb900;
+    height: 10px;
+    width: 4px;
+    position: relative;
+    right: -116px;
+    top: -20px;
+}
+
+.corner-top-right::after {
+    background: #fdb900;
+    content: "";
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    top: 0px;
+    right: 0;
+}
+
+.corner-bottom-right {
+    background: #fdb900;
+    height: 10px;
+    width: 4px;
+    position: relative;
+    right: -116px;
+    top: 0px;
+}
+
+.corner-bottom-right:after {
+    background: #fdb900;
+    content: "";
+    height: 4px;
+    position: absolute;
+    width: 10px;
+    top: 6px;
+    right: 0;
+}
